@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jason Whidby - Personal Portfolio</title> <!-- Write better copy for this later -->
+	<meta name="description" content="Jason Whidby - Personal Portfolio">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	 <!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+
+<style>
+	body{
+		padding-top: 40px;
+		position: relative;
+	}
+	#about-section{
+		/* background-image: url(images/highway.jpg); */
+		background-color: slategrey;
+		padding-top: 40px;
+	}
+
+	/* Adds a border between the columns in the Contact section */
+	#contact-form {
+ 		 border-left: 1px double grey;
+
+	}
+
+	hr {
+		height: 10px;
+		border: 0;
+		box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	}
+
+</style>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>       
+      			</button>
+      			<a class="navbar-brand" href="#">Jason Whidby</a>
+    		</div> <!-- End if navbar-header -->
+    		
+    		<!-- The collapsable elements of the header -->
+   			 <div class="collapse navbar-collapse" id="myNavbar">
+     			 <ul class="nav navbar-nav">
+       				 <li><a href="#about-section">About</a></li>
+        			 <li><a href="#portfolio">Portfolio</a></li>
+       				 <li><a href="#contact">Contact</a></li>
+      			</ul>
+      		</div><!-- End of navbar-collapse -->
+    
+    	</div> <!-- End of container-fluid -->
+	</nav> <!-- End of navbar -->
+
+	<!-- About Section -->
+	<div class="jumbotron" id="about-section">
+		<section>
+   			<div class="container text-center">
+    			 <div class="col-xs-8">
+       		 		<h2 style="color: white">Jason Whidby</h2>
+     				<p class="lead">Hey there bro. I'm just throwing some filler text in here for right now.</p>
+     			</div>
+     			<div class="col-xs-4">
+      				<img class="img-rounded img-responsive"src="http://static5.businessinsider.com/image/555f4a026bb3f7102072d40a/elon-musk-didnt-like-his-kids-school-so-he-made-his-own-small-secretive-school-without-grade-levels.jpg">
+     			</div>
+  			</div> <!-- End of about -->
+  		</section> <!-- End row -->
+  	</div> <!-- End About Section -->
+
+  	<!-- Portfolio Section --> <!-- Add Images and alt text later -->
+  	<div class="container text-center">
+  		
+  		<div class="page-header" id="portfolio">
+  					<h2>Portfolio</h2>
+  				</div> <!-- End Page Header -->
+  		<div class="row">
+  			<div class="col-sm-6">
+  				<img src="images/web-image.jpg" alt="Image 1" class="img-responsive img-thumbnail"> <!-- Here -->
+  			</div>
+  			<div class="col-sm-6">
+  				<img src="images/web-image.jpg" alt="Image 2" class="img-responsive img-thumbnail">
+  			</div>
+  		</div> <!-- End row -->
+  		<hr class="half-rule">
+  		<div class="row">
+  			<div class="col-sm-6">
+  				<img src="images/web-image.jpg" alt="Image 3" class="img-responsive img-thumbnail">
+  			</div>
+  			<div class="col-sm-6">
+  				<img src="images/web-image.jpg" alt="Image 4" class="img-responsive img-thumbnail">
+  			</div>
+   		
+  	</div> <!-- End Portfolio -->
+
+  	<hr>
+
+  	<!-- Contact Section -->
+  	<div class="container">
+  		<section>
+  			<div class="page-header" id="contact">
+  					<h2>Contact</h2>
+  				</div> <!-- End Page Header -->
+
+  			<!-- Social Media Buttons -->
+  			<div class="col-sm-4">
+  				<h2>Reach out on social media...</h2>
+  				<br>
+  				
+  			</div> <!-- End Social Media Buttons -->
+
+  			<!-- Contact Form -->
+  			<div class="col-sm-8" id="contact-form">
+  				<h2>...or leave a message below.</h2>
+  				<br>
+
+  				<form action="" class="form-horizontal">
+
+  					<!-- Name Form Group -->
+  					<div class="form-group">
+  						<label for="user-name" class="col-sm-2 control-label">Name</label>
+
+  						<div class="col-sm-10">
+  							<input type="text" class="form-control" id="user-name" placeholder="Enter your name">
+  						</div>		
+  					</div> <!-- End Name Form Group -->
+
+  					<!-- Email Form Group -->
+  					<div class="form-group">
+  						<label for="user-email" class="col-sm-2 control-label">Email</label>
+
+  						<div class="col-sm-10">
+  							<input type="text" class="form-control" id="user-name" placeholder="Enter your email">
+  						</div>		
+  					</div> <!-- End Name Form Group -->
+
+  					<!-- Message Form Group -->
+  					<div class="form-group">
+  						<label for="user-message" class="col-sm-2 control-label">Message</label>
+
+  						<div class="col-sm-10">
+  							<textarea type="text" id="user-message" class="form-control" cols="20" rows="10" placeholder="Enter your message"></textarea>
+  						</div>		
+  					</div> <!-- End Name Form Group -->
+
+  					<!-- Submit button -->
+  					<div class="form-group text-justify">
+  						<div class="col-sm-10 col-sm-offset-2">
+  							<button type="submit" class="btn btn-primary">Submit</button>
+  						</div>
+  					</div> <!-- End submit button --> 
+  					
+  				</form>
+  			</div> <!-- End contact form -->
+
+  			
+  		</section>
+  	</div> <!-- End Contact -->
+
+  	<hr>
+
+
+  	<div class="container">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">Designed for everyone, everywhere.</h2>
+    <p class="lead">Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+
+    <hr class="half-rule">
+
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="assets/img/sass-less.png" alt="Sass and Less support" class="img-responsive">
+        <h3>Preprocessors</h3>
+        <p>In addition to vanilla CSS, Bootstrap includes support for the two most popular CSS preprocessors, <a href="../css/#less">Less</a> and <a href="../css/#sass">Sass</a>.</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/img/devices.png" alt="Responsive across devices" class="img-responsive">
+        <h3>One framework, every device.</h3>
+        <p>Bootstrap easily and efficiently scales your project with one code base, from phones to tablets to desktops.</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/img/components.png" alt="Components" class="img-responsive">
+        <h3>Comprehensive docs</h3>
+        <p>With Bootstrap, you get extensive and beautiful documentation with hundreds of live examples, code snippets, and more.</p>
+      </div>
+    </div>
+
+    <hr class="half-rule">
+
+    <p class="lead">Bootstrap is open source. It's hosted, developed, and maintained on GitHub.</p>
+    <a href="https://github.com/twbs/bootstrap" class="btn btn-outline btn-lg">View the GitHub project</a>
+  </div>
+</div>
+
+
+  	
+	
+
+	<!-- JQuery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
